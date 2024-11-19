@@ -3,20 +3,12 @@
 #include <queue>
 #include <stack>
 #include <chrono>
-#include <sys/resource.h>
 
 using namespace std;
 using namespace std::chrono;
 
 vector<pair<int, int>> adj[5][5];
 bool vis[5][5];
-
-void printMemoryUsage(const string& label) {
-    // Só roda em unix
-    struct rusage usage;
-    getrusage(RUSAGE_SELF, &usage);
-    cout << label << " Memory usage: " << usage.ru_maxrss << " KB" << endl;
-}
 
 void bfs(pair<int, int> start) {
     queue<pair<int, int>> q;
@@ -90,19 +82,19 @@ int main() {
     auto start_time = high_resolution_clock::now();
     bfs({4, 0});
     auto end_time = high_resolution_clock::now();
-    auto duration = duration_cast<microseconds>(end_time - start_time).count();
-    cout << "BFS Time: " << duration << " microseconds" << endl;
-    printMemoryUsage("BFS");
 
-    // Reset visitation status for DFS
+    auto duration = duration_cast<nanoseconds>(end_time - start_time).count();
+    cout << "BFS Time: " << duration << " nanoseconds" << endl;
+
+    // Resetando o estado de visitação para o DFS
     fill(&vis[0][0], &vis[0][0] + sizeof(vis), false);
 
     start_time = high_resolution_clock::now();
     dfs({4, 0});
     end_time = high_resolution_clock::now();
-    duration = duration_cast<microseconds>(end_time - start_time).count();
-    cout << "DFS Time: " << duration << " microseconds" << endl;
-    printMemoryUsage("DFS");
+
+    duration = duration_cast<nanoseconds>(end_time - start_time).count();
+    cout << "DFS Time: " << duration << " nanoseconds" << endl;
 
     return 0;
 }
