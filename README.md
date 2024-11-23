@@ -25,6 +25,25 @@ nós acessíveis tenham sido visitados.
 
 ## Resultados das medições de Desempenho
 
+### Tempo de execução
+
+### Consumo de memória
+
+### Completude
+
+### Optimalidade
+
+Observando a entrada, podemos verificar que a solução ótima seria a sequência: U V Q L M N I H C D E.
+
+Dessa forma, ao executar os algoritmos com essa entrada, podemos perceber que a BFS, como esperado, encontra a solução ótima. A DFS, porém, dependendo da ordem em que verifica as casas adjacentes, pode encontrar uma solução que não é a ótima.
+
+Abaixo seguem os caminhos encontrados por cada algoritmo.
+
+```
+BFS: U V Q L M N I H C D E
+DFS: U V X Y Z T S R M N I H C D E
+```
+
 ## Análise Comparativa dos Algoritmos
 
 Ambos os algoritmos têm a mesma complexidade temporal de O(V+E), onde V é o número de vértices e E é o número de arestas
@@ -32,16 +51,16 @@ no grafo. No entanto, eles divergem na sua abordagem e no uso da memória.
 
 Complexidade Espacial:
 
-* A BFS pode ocupar mais espaço na memória, pois precisa manter uma fila com todos os nós do nível atual do grafo, o que
+- A BFS pode ocupar mais espaço na memória, pois precisa manter uma fila com todos os nós do nível atual do grafo, o que
   poderia se tornar um problema em grafos muito largos.
-* A DFS utiliza menos memória para grafos profundos, pois a pilha mantém apenas o caminho atual desde o nó raiz até o nó
+- A DFS utiliza menos memória para grafos profundos, pois a pilha mantém apenas o caminho atual desde o nó raiz até o nó
   folha. No entanto, em grafos com grande profundidade, pode haver o risco de estouro de pilha.
 
 Aplicações e Características:
 
-* BFS: Ideal para encontrar o caminho mais curto em grafos não ponderados, pois explora nós por nível. É frequentemente
+- BFS: Ideal para encontrar o caminho mais curto em grafos não ponderados, pois explora nós por nível. É frequentemente
   usado em algoritmos de roteamento e para resolver problemas como a determinação do menor caminho.
-* DFS: Útil em problemas que requerem a exploração completa de um caminho antes de tentar outro, como em busca de
+- DFS: Útil em problemas que requerem a exploração completa de um caminho antes de tentar outro, como em busca de
   soluções em problemas de jogo e verificação de caminhos em labirintos.
 
 ## Conclusão e Sugestões de Melhorias
@@ -52,9 +71,8 @@ BFS e DFS, são adequados para cenários diferentes.
 
 Possíveis Melhorias:
 
-* Manejo de Componentes Desconexos: Expandir os algoritmos para lidar com grafos que não são totalmente conectados,
+- Manejo de Componentes Desconexos: Expandir os algoritmos para lidar com grafos que não são totalmente conectados,
   garantindo que todos os componentes sejam visitados se necessário.
 
-* Melhoria de Desempenho: Ainda que os algoritmos sejam eficientes para grafos pequenos, em grafos muito grandes,
+- Melhoria de Desempenho: Ainda que os algoritmos sejam eficientes para grafos pequenos, em grafos muito grandes,
   melhorias como otimizações na estrutura de dados usada para armazenar os estados visitados poderiam ser exploradas.
-
