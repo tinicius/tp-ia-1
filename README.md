@@ -29,6 +29,13 @@ nós acessíveis tenham sido visitados.
 
 ### Consumo de memória
 
+O consumo de memória dos algoritmos tanto do BFS quanto do DFS, é determinado principalmente pela estrutura de dados utilizada para armazenar os nós durante o processo de busca
+* Busca em Largura (BFS):
+  O BFS utiliza uma fila para gerenciar os nós que serão explorados. O pior caso de consumo de memória ocorre em grafos amplos, onde todos os nós de um nível devem ser armazenados simultaneamente. Portanto, o custo de memória é proporcional ao maior número de nós em qualquer nível do grafo, o que pode ser representado como O(b^d), onde b é o fator de ramificação (número médio de sucessores por nó) e d é a profundidade do menor nó solução.
+* Busca em Profundidade (DFS):
+  O DFS utiliza de uma pilha para armazenar o caminho atual no grafo. O consumo máximo de memória ocorre quando a pilha atinge uma profundidade igual ao comprimento do caminho mais longo, resultando em um custo de O(d), onde d é a profundidade máxima do grafo. Isso faz com que a DFS seja mais econômica em termos de memória em grafos largos, mas pode enfrentar problemas de estouro de pilha em grafos muito profundos.
+
+
 ### Completude
 
 ### Optimalidade
