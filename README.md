@@ -38,6 +38,9 @@ O consumo de memória dos algoritmos tanto do BFS quanto do DFS, é determinado 
 
 ### Completude
 
+A completude de um algoritmo, refere-se à capacidade dele de garantir que encontrará uma solução caso ela exista, no caso, podemos afirmar que o BFS é completo, pois o BFS explora todos os nós por nível antes de passar para o próximo, desse modo, garantindo que encontrará uma solução se uma solução existir, desde que o grafo seja finito e conexo. Já o DFS, geralmente não é completo. Pois p DFS pode se perder em uma ramificação infinita de um grafo, especialmente em grafos que contêm ciclos, a menos que haja um mecanismo para detectar e evitar visitar novamente os nós já explorados. Caso possamos garantir que serão utilizados grafos finitos e sem ciclos, podemos afirmar que o DFS é completo, porém, isso não é o caso geral.
+
+
 ### Optimalidade
 
 Observando a entrada, podemos verificar que a solução ótima seria a sequência: U V Q L M N I H C D E.
