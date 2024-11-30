@@ -16,9 +16,9 @@ class DFS {
   vector<vector<bool>> vis;
 
  public:
-  DFS() {
-    this->adj = get_adj_matrix();
-    this->vis = vector<vector<bool>>(5, vector<bool>(5, false));
+  DFS(int n, vector<vector<vector<pair<int, int>>>>& adj) {
+    this->adj = adj;
+    this->vis = vector<vector<bool>>(n, vector<bool>(n, false));
   }
 
   void run(pair<int, int> start, pair<int, int> end) {
@@ -41,6 +41,33 @@ class DFS {
         }
       }
     }
+  }
+
+  int run_and_get_max_size(pair<int, int> start, pair<int, int> end) {
+    stack<pair<int, int>> s;
+    s.push(start);
+
+    int ans = 0;
+
+    while (!s.empty()) {
+      ans = max(ans, (int)s.size());
+      auto [x, y] = s.top();
+      s.pop();
+
+      if (x == end.first && y == end.second) return ans;
+
+      if (!vis[x][y]) {
+        vis[x][y] = true;
+
+        for (auto [u, v] : adj[x][y]) {
+          if (!vis[u][v]) {
+            s.push({u, v});
+          }
+        }
+      }
+    }
+
+    return ans;
   }
 
   vector<char> run_and_get_path(pair<int, int> start, pair<int, int> end) {

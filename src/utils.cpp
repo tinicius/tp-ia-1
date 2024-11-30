@@ -1,6 +1,8 @@
 #ifndef UTILS_CPP
 #define UTILS_CPP
 
+#include <cstdlib>
+#include <ctime>
 #include <vector>
 
 using namespace std;

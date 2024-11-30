@@ -1,4 +1,5 @@
 #include <chrono>
+#include <fstream>
 #include <iostream>
 #include <queue>
 #include <stack>
@@ -7,24 +8,31 @@
 #include "bfs.cpp"
 #include "dfs.cpp"
 
+#define dbg(x) std::cerr << #x << " = " << x << std::endl
+
 using namespace std;
 using namespace std::chrono;
 
 int main() {
-  auto start_time = high_resolution_clock::now();
-  auto end_time = high_resolution_clock::now();
-  auto duration = duration_cast<nanoseconds>(end_time - start_time).count();
+  pair<int, int> start = {4, 0};
+  pair<int, int> end = {0, 4};
 
-  BFS bfs;
-  auto path = bfs.run_and_get_path({4, 0}, {0, 4});
+  auto adj = get_adj_matrix();
 
-  for (auto p : path) cout << p << " ";
+  BFS bfs(5, adj);
+  auto path = bfs.run_and_get_path(start, end);
+
+  cout << "BFS: ";
+
+  for (auto c : path) cout << c << " ";
   cout << endl;
 
-  DFS dfs;
-  path = dfs.run_and_get_path({4, 0}, {0, 4});
+  DFS dfs(5, adj);
+  path = dfs.run_and_get_path(start, end);
 
-  for (auto p : path) cout << p << " ";
+  cout << "DFS: ";
+
+  for (auto c : path) cout << c << " ";
   cout << endl;
 
   return 0;
