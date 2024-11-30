@@ -5,6 +5,8 @@ Integrantes:
 - Vinicius Alves Pereira
 - César Henrique Resende Soares
 
+Este projeto tem como objetivo explorar e comparar a eficiência e eficácia de dois algoritmos de busca, onde será aplicado a resolução de um problema de labirinto. Este labirinto, foi configurado como um grafo, onde cada nó possui uma letra, e o objetivo é sair do ponto U e chegar ao ponto E, considerando as parades, que desconectam uma parte a outra do grafo. Porém, é válido ressaltar que, no exemplo dado, o grafo como um todo é conexo. Este trabalho foi desenvolvido no contexto da disciplina de Inteligência Artificial do curso de Engenharia de Computação do CEFET-MG, Campus Divinópolis,  Nele, foram comparados termos de tempo de execução, consumo de memória, completude e optimalidade dos algoritmos BFS e DFS.
+
 ## Descrição dos Algoritmos Implementados
 
 O código apresentado implementa dois algoritmos clássicos de busca em grafos: a Busca em Largura (Breadth-First Search - BFS) e a Busca em Profundidade (Depth-First Search - DFS). Ambos os algoritmos são utilizados em aplicações de inteligência artificial e na ciência da computação como um todo, especialmente em problemas que envolvem exploração de caminhos.
