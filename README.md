@@ -5,7 +5,7 @@ Integrantes:
 - Vinicius Alves Pereira
 - César Henrique Resende Soares
 
-Este projeto tem como objetivo explorar e comparar a eficiência e eficácia de dois algoritmos de busca, onde será aplicado a resolução de um problema de labirinto. Este labirinto, foi configurado como um grafo, onde cada nó possui uma letra, e o objetivo é sair do ponto U e chegar ao ponto E, considerando as parades, que desconectam uma parte a outra do grafo. Porém, é válido ressaltar que, no exemplo dado, o grafo como um todo é conexo. Este trabalho foi desenvolvido no contexto da disciplina de Inteligência Artificial do curso de Engenharia de Computação do CEFET-MG, Campus Divinópolis,  Nele, foram comparados termos de tempo de execução, consumo de memória, completude e optimalidade dos algoritmos BFS e DFS.
+Este projeto tem como objetivo explorar e comparar a eficiência e eficácia de dois algoritmos de busca aplicados à resolução de um problema de labirinto. O labirinto foi configurado como um grafo, onde cada nó possui uma letra, e o objetivo é sair do ponto U e chegar ao ponto E, considerando as paredes que desconectam uma parte da outra do grafo. É válido ressaltar que, no exemplo dado, o grafo como um todo é conexo. Este trabalho foi desenvolvido no contexto da disciplina de Inteligência Artificial do curso de Engenharia de Computação do CEFET-MG, Campus Divinópolis. Nele, foram comparados os termos de tempo de execução, consumo de memória, completude e optimalidade dos algoritmos BFS e DFS.
 
 ## Descrição dos Algoritmos Implementados
 
