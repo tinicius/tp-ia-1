@@ -1,4 +1,9 @@
-# tp-ia-1
+# Inteligência Artificial - Trabalho - Capítulo 3 e 4
+
+Integrantes:
+
+- Vinicius Alves Pereira
+- César Henrique Resende Soares 
 
 ## Descrição dos Algoritmos Implementados
 
