@@ -23,6 +23,8 @@ A DFS, ao contrário da BFS, explora o grafo o mais fundo possível ao longo de 
 
 Para avaliar o tempo de execução, foi criado um script (`time.cpp`) que executa ambos os algoritmos 100 vezes e calcula a média de cada execução. Esse tipo de avaliação foi escolhido para reduzir possíveis variações entre execuções, permitindo uma melhor análise dos resultados.
 
+O tempo de execução é uma variável que pode apresentar diferentes valores a depender do hardware onde o programa está sendo executado. Dessa forma, o objetivo não é avaliar os resultados específicos obtidos, mas sim comparar ambos os algoritmos de maneira proporcional.
+
 ### Consumo de memória
 
 Para analisar o consumo de memória, foi decidido observar o número de elementos nas estruturas de dados. Criamos um script (`memory.cpp`) que monitora durante a execução o tamanho máximo atingido pela pilha ou pela fila durante a execução dos algoritmos. Essa abordagem permite observar qual foi o consumo máximo de memória exigido pelo algoritmo.
