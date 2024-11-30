@@ -41,14 +41,14 @@ Para avaliar a optimalidade dos algoritmos, foi desenvolvido um script (`path.cp
 
 ### Tempo de execução
 
-Apos a execucao foram obtidos os seguintes valores.
+Após a execução foram obtidos os seguintes valores.
 
 | Algoritmo | Tempo Médio (µs) |
 | --------- | ---------------- |
 | BFS       | 27               |
 | DFS       | 47               |
 
-E possivel observar que a BFS termina sua execucao aproximadamente 1.7 vezes mais rapido a DFS. Isso ocorre devido a BFS encontrar o menor caminho evitando caminhos errados, alem disso como a poucas possiveis de movimento a BFS observa poucos elementos em cada nivel. Diferemente a DFS verifica um caminho errado ate o final necessitando mais tempo para regredir e buscar outro caminho.
+É possível observar que a BFS termina sua execução aproximadamente 1.7 vezes mais rápido que a DFS. Isso ocorre devido a BFS encontrar o menor caminho evitando caminhos errados, além disso como há poucas possibilidades de movimento a BFS observa poucos elementos em cada nível. Diferentemente a DFS verifica um caminho errado até o final necessitando mais tempo para regredir e buscar outro caminho.
 
 ### Consumo de memória
 
@@ -77,34 +77,25 @@ DFS: U V X Y Z T S R M N I H C D E
 
 ## Análise Comparativa dos Algoritmos
 
-Ambos os algoritmos têm a mesma complexidade temporal de O(V+E), onde V é o número de vértices e E é o número de arestas
-no grafo. No entanto, eles divergem na sua abordagem e no uso da memória.
+Ambos os algoritmos têm a mesma complexidade temporal de O(V+E), onde V é o número de vértices e E é o número de arestas no grafo. No entanto, eles divergem na sua abordagem e no uso da memória.
 
 Complexidade Espacial:
 
-- A BFS pode ocupar mais espaço na memória, pois precisa manter uma fila com todos os nós do nível atual do grafo, o que
-  poderia se tornar um problema em grafos muito largos.
-- A DFS utiliza menos memória para grafos profundos, pois a pilha mantém apenas o caminho atual desde o nó raiz até o nó
-  folha. No entanto, em grafos com grande profundidade, pode haver o risco de estouro de pilha.
+- A BFS pode ocupar mais espaço na memória, pois precisa manter uma fila com todos os nós do nível atual do grafo, o que poderia se tornar um problema em grafos muito largos.
+- A DFS utiliza menos memória para grafos profundos, pois a pilha mantém apenas o caminho atual desde o nó raiz até o nó folha. No entanto, em grafos com grande profundidade, pode haver o risco de estouro de pilha.
 
 Aplicações e Características:
 
-- BFS: Ideal para encontrar o caminho mais curto em grafos não ponderados, pois explora nós por nível. É frequentemente
-  usado em algoritmos de roteamento e para resolver problemas como a determinação do menor caminho.
-- DFS: Útil em problemas que requerem a exploração completa de um caminho antes de tentar outro, como em busca de
-  soluções em problemas de jogo e verificação de caminhos em labirintos.
-  Observamos que, neste problema, a busca em largura (BFS) apresentou um desempenho superior, garantindo uma solução ótima com menor custo de memória e em menor tempo. O baixo fator de ramificação do problema é uma das principais características que justificam esse resultado. Além disso, a busca em profundidade (DFS), por testar um caminho até o final, pode percorrer uma grande distância em um caminho errado. Esse problema é evitado na BFS, que sempre busca a solução mais curta.
+- BFS: Ideal para encontrar o caminho mais curto em grafos não ponderados, pois explora nós por nível. É frequentemente usado em algoritmos de roteamento e para resolver problemas como a determinação do menor caminho.
+- DFS: Útil em problemas que requerem a exploração completa de um caminho antes de tentar outro, como em busca de soluções em problemas de jogo e verificação de caminhos em labirintos.
+
+Observamos que, neste problema, a busca em largura (BFS) apresentou um desempenho superior, garantindo uma solução ótima com menor custo de memória e em menor tempo. O baixo fator de ramificação do problema é uma das principais características que justificam esse resultado. Além disso, a busca em profundidade (DFS), por testar um caminho até o final, pode percorrer uma grande distância em um caminho errado. Esse problema é evitado na BFS, que sempre busca a solução mais curta.
 
 ## Conclusão e Sugestões de Melhorias
 
-Os resultados dos tempos de execução apresentados no código são medidos em nanosegundos, mas, devido à simplicidade do
-grafo, a diferença de tempo pode não ser significativa para avaliar o desempenho em grande escala. Ambos os algoritmos,
-BFS e DFS, são adequados para cenários diferentes.
+Os resultados dos tempos de execução apresentados no código são medidos em nanosegundos, mas, devido à simplicidade do grafo, a diferença de tempo pode não ser significativa para avaliar o desempenho em grande escala. Ambos os algoritmos, BFS e DFS, são adequados para cenários diferentes.
 
 Possíveis Melhorias:
 
-- Manejo de Componentes Desconexos: Expandir os algoritmos para lidar com grafos que não são totalmente conectados,
-  garantindo que todos os componentes sejam visitados se necessário.
-
-- Melhoria de Desempenho: Ainda que os algoritmos sejam eficientes para grafos pequenos, em grafos muito grandes,
-  melhorias como otimizações na estrutura de dados usada para armazenar os estados visitados poderiam ser exploradas.
+- Manejo de Componentes Desconexos: Expandir os algoritmos para lidar com grafos que não são totalmente conectados, garantindo que todos os componentes sejam visitados se necessário.
+- Melhoria de Desempenho: Ainda que os algoritmos sejam eficientes para grafos pequenos, em grafos muito grandes, melhorias como otimizações na estrutura de dados usada para armazenar os estados visitados poderiam ser exploradas.
