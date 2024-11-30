@@ -3,7 +3,7 @@
 Integrantes:
 
 - Vinicius Alves Pereira
-- César Henrique Resende Soares 
+- César Henrique Resende Soares
 
 ## Descrição dos Algoritmos Implementados
 
@@ -64,6 +64,7 @@ A BFS, por explorar todos os vizinhos de um nó antes de avançar para o próxim
 Foi observado que ambos os algoritmos conseguiram encontrar uma solução válida, conforme esperado. Isso ocorre porque tanto a BFS quanto a DFS são algoritmos completos, ou seja, eles garantem encontrar um caminho se ele existir em um grafo finito.
 
 ### Optimalidade
+
 Observando a entrada, podemos verificar que a solução ótima seria a sequência: `U V Q L M N I H C D E`.
 
 Dessa forma, ao executar os algoritmos com essa entrada, podemos perceber que a BFS, como esperado, encontra a solução ótima. A DFS, porém, dependendo da ordem em que verifica as casas adjacentes, pode encontrar uma solução que não é a ótima.
@@ -93,9 +94,10 @@ Observamos que, neste problema, a busca em largura (BFS) apresentou um desempenh
 
 ## Conclusão e Sugestões de Melhorias
 
-Os resultados dos tempos de execução apresentados no código são medidos em nanosegundos, mas, devido à simplicidade do grafo, a diferença de tempo pode não ser significativa para avaliar o desempenho em grande escala. Ambos os algoritmos, BFS e DFS, são adequados para cenários diferentes.
+Os algoritmos de busca em grafos, BFS e DFS, são ferramentas fundamentais na inteligência artificial e na ciência da computação. Através deste trabalho, foi possível observar as diferenças de desempenho entre esses algoritmos em termos de tempo de execução, consumo de memória, completude e optimalidade.
 
-Possíveis Melhorias:
+A BFS demonstrou ser mais eficiente em termos de tempo e consumo de memória para o problema específico abordado, encontrando a solução ótima de forma mais rápida e com menor uso de recursos. A DFS, embora completa, pode não encontrar a solução ótima e tende a consumir mais memória em problemas com maior profundidade.
 
-- Manejo de Componentes Desconexos: Expandir os algoritmos para lidar com grafos que não são totalmente conectados, garantindo que todos os componentes sejam visitados se necessário.
-- Melhoria de Desempenho: Ainda que os algoritmos sejam eficientes para grafos pequenos, em grafos muito grandes, melhorias como otimizações na estrutura de dados usada para armazenar os estados visitados poderiam ser exploradas.
+Esses resultados reforçam a importância de escolher o algoritmo adequado para cada tipo de problema, considerando as características específicas do grafo e os requisitos de desempenho. Para problemas que exigem a solução mais curta e possuem um baixo fator de ramificação, a BFS é a escolha mais indicada. Já a DFS pode ser mais adequada para problemas que requerem a exploração completa de caminhos ou em grafos com grande profundidade.
+
+Como sugestão de melhoria, é interessante avaliar o problema com outros algoritmos de busca e complementar as comparações entre as diferentes alternativas, considerando aspectos como eficiência, precisão e complexidade. Além disso, é recomendável executar os algoritmos contra diferentes matrizes, com tamanhos e configurações de caminhos variados, permitindo avaliar o desempenho em cenários diversos e identificar os casos em que cada abordagem se destaca. Essa análise ampliada pode fundamentar a escolha do algoritmo mais adequado para cada tipo de aplicação.
