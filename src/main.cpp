@@ -5,8 +5,6 @@
 #include <stack>
 #include <vector>
 
-#include "bfs.cpp"
-#include "dfs.cpp"
 #include "astar.cpp"
 #include "greedy.cpp"
 
@@ -22,9 +20,9 @@ int main() {
   auto adj = get_adj_matrix();
 
   AStar astar(5, adj);
-  auto path = astar.run(start, end);
+  auto path = astar.run_and_get_path(start, end);
 
-  cout << "AStar: ";
+  cout << "A*: ";
 
   for (auto c : path) cout << c << " ";
   cout << endl;

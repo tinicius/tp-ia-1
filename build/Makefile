@@ -153,54 +153,6 @@ src/astar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/astar.cpp.s
 .PHONY : src/astar.cpp.s
 
-src/bfs.o: src/bfs.cpp.o
-.PHONY : src/bfs.o
-
-# target to build an object file
-src/bfs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o
-.PHONY : src/bfs.cpp.o
-
-src/bfs.i: src/bfs.cpp.i
-.PHONY : src/bfs.i
-
-# target to preprocess a source file
-src/bfs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/bfs.cpp.i
-.PHONY : src/bfs.cpp.i
-
-src/bfs.s: src/bfs.cpp.s
-.PHONY : src/bfs.s
-
-# target to generate assembly for a file
-src/bfs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/bfs.cpp.s
-.PHONY : src/bfs.cpp.s
-
-src/dfs.o: src/dfs.cpp.o
-.PHONY : src/dfs.o
-
-# target to build an object file
-src/dfs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o
-.PHONY : src/dfs.cpp.o
-
-src/dfs.i: src/dfs.cpp.i
-.PHONY : src/dfs.i
-
-# target to preprocess a source file
-src/dfs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/dfs.cpp.i
-.PHONY : src/dfs.cpp.i
-
-src/dfs.s: src/dfs.cpp.s
-.PHONY : src/dfs.s
-
-# target to generate assembly for a file
-src/dfs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-ia-1.dir/build.make CMakeFiles/tp-ia-1.dir/src/dfs.cpp.s
-.PHONY : src/dfs.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -261,12 +213,6 @@ help:
 	@echo "... src/astar.o"
 	@echo "... src/astar.i"
 	@echo "... src/astar.s"
-	@echo "... src/bfs.o"
-	@echo "... src/bfs.i"
-	@echo "... src/bfs.s"
-	@echo "... src/dfs.o"
-	@echo "... src/dfs.i"
-	@echo "... src/dfs.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

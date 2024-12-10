@@ -5,8 +5,8 @@
 #include <stack>
 #include <vector>
 
-#include "bfs.cpp"
-#include "dfs.cpp"
+#include "astar.cpp"
+#include "greedy.cpp"
 
 #define dbg(x) std::cerr << #x << " = " << x << std::endl
 
@@ -19,20 +19,20 @@ int main() {
 
   auto adj = get_adj_matrix();
 
-  BFS bfs(5, adj);
-  int bfs_max = bfs.run_and_get_max_size(start, end);
+  AStar astar(5, adj);
+  int astar_max = astar.run_and_get_max_size(start, end);
 
-  DFS dfs(5, adj);
-  int dfs_max = dfs.run_and_get_max_size(start, end);
+  Greedy greedy(5, adj);
+  int greedy_max = greedy.run_and_get_max_size(start, end);
 
   int coast = sizeof(pair<int, int>);
 
   dbg(coast);
-  dbg(bfs_max);
-  dbg(dfs_max);
+  dbg(astar_max);
+  dbg(greedy_max);
 
-  cout << "BFS max memory usage: " << bfs_max * coast << " B" << endl;
-  cout << "DFS max memory usage: " << dfs_max * coast << " B" << endl;
+  cout << "A* max memory usage: " << astar_max * coast << " B" << endl;
+  cout << "Greedy max memory usage: " << greedy_max * coast << " B" << endl;
 
   return 0;
 }

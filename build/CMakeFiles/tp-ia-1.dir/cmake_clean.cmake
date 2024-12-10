@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o"
   "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o.d"
-  "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o.d"
-  "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o.d"
   "CMakeFiles/tp-ia-1.dir/src/main.cpp.o"
   "CMakeFiles/tp-ia-1.dir/src/main.cpp.o.d"
   "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o"

@@ -74,6 +74,11 @@ execução. Assim, é possível comparar o resultado obtido com a solução óti
 
 Após a execução foram obtidos os seguintes valores.
 
+| Algoritmo | Tempo Médio (µs) |
+|-----------|------------------------------|
+| A*        | 36                         |
+| Guloso    | 56                         |
+
 É possível observar que a Busca Gulosa termina sua execução mais rápido que o A*. Isso ocorre porque a Busca Gulosa
 explora o nó com a menor estimativa de distância ao objetivo sem considerar o custo acumulado, o que pode levar a
 caminhos subótimos mas mais rápidos de computar. O A*, por sua vez, busca o caminho mais eficiente, levando em
@@ -81,14 +86,28 @@ consideração tanto o custo real quanto a heurística.
 
 ### Consumo de memória
 
+| Algoritmo | Máximo de elementos | Consumo de memória (Bytes) |
+|-----------|---------------------|----------------------------|
+| A*        | 3                   | 24                         |
+| Guloso    | 3                   | 24                         |
+
 O A*, por armazenar o caminho percorrido e a estimativa heurística, tende a utilizar mais memória em comparação à Busca
 Gulosa, que mantém apenas o nó atual e sua estimativa. Porém, embora o A* utilize mais memória, ele garante a solução
 ótima, enquanto a Busca Gulosa pode ser mais eficiente em termos de memória, mas com soluções potencialmente sub-ótimas.
 
 # Completude
 
+Observando a entrada, podemos verificar que a solução ótima seria a sequência: U V Q L M N I H C D E.
+
 Foi observado que ambos os algoritmos conseguiram encontrar uma solução válida, conforme esperado pois tanto o A* quanto
 a Busca Gulosa conseguiram encontrar o objetivo.
+
+Abaixo seguem os caminhos encontrados por cada algoritmo.
+
+```
+A*:     U V Q L M N I H C D E 
+Greedy: U V Q L M N I H C D 
+```
 
 # Optimalidade
 

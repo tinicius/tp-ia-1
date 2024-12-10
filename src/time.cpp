@@ -5,8 +5,8 @@
 #include <stack>
 #include <vector>
 
-#include "bfs.cpp"
-#include "dfs.cpp"
+#include "astar.cpp"
+#include "greedy.cpp"
 
 #define dbg(x) std::cerr << #x << " = " << x << std::endl
 
@@ -14,8 +14,8 @@ using namespace std;
 using namespace std::chrono;
 
 int main() {
-  int bfs_sum = 0;
-  int dfs_sum = 0;
+  int astar_sum = 0;
+  int greedy_sum = 0;
 
   for (int i = 0; i < 100; i++) {
     auto start_time = high_resolution_clock::now();
@@ -25,25 +25,25 @@ int main() {
 
     auto adj = get_adj_matrix();
 
-    BFS bfs(5, adj);
-    bfs.run(start, end);
+    AStar astar(5, adj);
+    astar.run(start, end);
 
     auto end_time = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(end_time - start_time);
 
-    bfs_sum += duration.count();
+    astar_sum += duration.count();
 
-    DFS dfs(5, adj);
-    dfs.run(start, end);
+    Greedy greedy(5, adj);
+    greedy.run(start, end);
 
     end_time = high_resolution_clock::now();
     duration = duration_cast<microseconds>(end_time - start_time);
 
-    dfs_sum += duration.count();
+    greedy_sum += duration.count();
   }
 
-  cout << "BFS: " << bfs_sum / 100 << " microseconds" << endl;
-  cout << "DFS: " << dfs_sum / 100 << " microseconds" << endl;
+  cout << "A*: " << astar_sum / 100 << " microseconds" << endl;
+  cout << "Greedy: " << greedy_sum / 100 << " microseconds" << endl;
 
   return 0;
 }

@@ -59,6 +59,33 @@ class Greedy {
     }
   }
 
+  int run_and_get_max_size(pair<int, int> start, pair<int, int> end) {
+    priority_queue<Node, vector<Node>, greater<Node>> pq;
+
+    pq.push(Node(start.first, start.second, manhattan_distance(start, end)));
+
+    int ans = 0;
+
+    while (!pq.empty()) {
+      ans = max(ans, (int)pq.size());
+
+      auto node = pq.top();
+      pq.pop();
+
+      if (node.x == end.first && node.y == end.second) return ans;
+
+      vis[node.x][node.y] = true;
+
+      for (auto [u, v] : adj[node.x][node.y]) {
+        if (!vis[u][v]) {
+          pq.push(Node(u, v, manhattan_distance({u, v}, end)));
+        }
+      }
+    }
+
+    return ans;
+  }
+
   vector<char> run_and_get_path(pair<int, int> start, pair<int, int> end) {
     vector<vector<char>> grid = {{'A', 'B', 'C', 'D', 'E'},
                                  {'F', 'G', 'H', 'I', 'J'},

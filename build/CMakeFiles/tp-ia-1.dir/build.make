@@ -83,38 +83,10 @@ CMakeFiles/tp-ia-1.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp-ia-1.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vinicius/Documents/projects/tp-ia-1/src/main.cpp -o CMakeFiles/tp-ia-1.dir/src/main.cpp.s
 
-CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o: CMakeFiles/tp-ia-1.dir/flags.make
-CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o: /home/vinicius/Documents/projects/tp-ia-1/src/dfs.cpp
-CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o: CMakeFiles/tp-ia-1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o -MF CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o.d -o CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o -c /home/vinicius/Documents/projects/tp-ia-1/src/dfs.cpp
-
-CMakeFiles/tp-ia-1.dir/src/dfs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp-ia-1.dir/src/dfs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vinicius/Documents/projects/tp-ia-1/src/dfs.cpp > CMakeFiles/tp-ia-1.dir/src/dfs.cpp.i
-
-CMakeFiles/tp-ia-1.dir/src/dfs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp-ia-1.dir/src/dfs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vinicius/Documents/projects/tp-ia-1/src/dfs.cpp -o CMakeFiles/tp-ia-1.dir/src/dfs.cpp.s
-
-CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o: CMakeFiles/tp-ia-1.dir/flags.make
-CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o: /home/vinicius/Documents/projects/tp-ia-1/src/bfs.cpp
-CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o: CMakeFiles/tp-ia-1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o -MF CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o.d -o CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o -c /home/vinicius/Documents/projects/tp-ia-1/src/bfs.cpp
-
-CMakeFiles/tp-ia-1.dir/src/bfs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp-ia-1.dir/src/bfs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vinicius/Documents/projects/tp-ia-1/src/bfs.cpp > CMakeFiles/tp-ia-1.dir/src/bfs.cpp.i
-
-CMakeFiles/tp-ia-1.dir/src/bfs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp-ia-1.dir/src/bfs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vinicius/Documents/projects/tp-ia-1/src/bfs.cpp -o CMakeFiles/tp-ia-1.dir/src/bfs.cpp.s
-
 CMakeFiles/tp-ia-1.dir/src/utils.cpp.o: CMakeFiles/tp-ia-1.dir/flags.make
 CMakeFiles/tp-ia-1.dir/src/utils.cpp.o: /home/vinicius/Documents/projects/tp-ia-1/src/utils.cpp
 CMakeFiles/tp-ia-1.dir/src/utils.cpp.o: CMakeFiles/tp-ia-1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tp-ia-1.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tp-ia-1.dir/src/utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-ia-1.dir/src/utils.cpp.o -MF CMakeFiles/tp-ia-1.dir/src/utils.cpp.o.d -o CMakeFiles/tp-ia-1.dir/src/utils.cpp.o -c /home/vinicius/Documents/projects/tp-ia-1/src/utils.cpp
 
 CMakeFiles/tp-ia-1.dir/src/utils.cpp.i: cmake_force
@@ -128,7 +100,7 @@ CMakeFiles/tp-ia-1.dir/src/utils.cpp.s: cmake_force
 CMakeFiles/tp-ia-1.dir/src/astar.cpp.o: CMakeFiles/tp-ia-1.dir/flags.make
 CMakeFiles/tp-ia-1.dir/src/astar.cpp.o: /home/vinicius/Documents/projects/tp-ia-1/src/astar.cpp
 CMakeFiles/tp-ia-1.dir/src/astar.cpp.o: CMakeFiles/tp-ia-1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tp-ia-1.dir/src/astar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tp-ia-1.dir/src/astar.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-ia-1.dir/src/astar.cpp.o -MF CMakeFiles/tp-ia-1.dir/src/astar.cpp.o.d -o CMakeFiles/tp-ia-1.dir/src/astar.cpp.o -c /home/vinicius/Documents/projects/tp-ia-1/src/astar.cpp
 
 CMakeFiles/tp-ia-1.dir/src/astar.cpp.i: cmake_force
@@ -142,8 +114,6 @@ CMakeFiles/tp-ia-1.dir/src/astar.cpp.s: cmake_force
 # Object files for target tp-ia-1
 tp__ia__1_OBJECTS = \
 "CMakeFiles/tp-ia-1.dir/src/main.cpp.o" \
-"CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o" \
-"CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o" \
 "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o" \
 "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o"
 
@@ -151,13 +121,11 @@ tp__ia__1_OBJECTS = \
 tp__ia__1_EXTERNAL_OBJECTS =
 
 tp-ia-1: CMakeFiles/tp-ia-1.dir/src/main.cpp.o
-tp-ia-1: CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o
-tp-ia-1: CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o
 tp-ia-1: CMakeFiles/tp-ia-1.dir/src/utils.cpp.o
 tp-ia-1: CMakeFiles/tp-ia-1.dir/src/astar.cpp.o
 tp-ia-1: CMakeFiles/tp-ia-1.dir/build.make
 tp-ia-1: CMakeFiles/tp-ia-1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable tp-ia-1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tp-ia-1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tp-ia-1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

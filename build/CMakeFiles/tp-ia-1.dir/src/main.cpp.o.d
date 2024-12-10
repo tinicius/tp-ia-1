@@ -171,19 +171,6 @@ CMakeFiles/tp-ia-1.dir/src/main.cpp.o: \
  /usr/include/c++/12/bits/stl_queue.h \
  /usr/include/c++/12/bits/uses_allocator.h /usr/include/c++/12/stack \
  /usr/include/c++/12/bits/stl_stack.h \
- /home/vinicius/Documents/projects/tp-ia-1/src/bfs.cpp \
- /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algo.h \
- /usr/include/c++/12/bits/algorithmfwd.h \
- /usr/include/c++/12/bits/stl_tempbuf.h \
- /usr/include/c++/12/bits/uniform_int_dist.h \
- /usr/include/c++/12/bits/ranges_algo.h \
- /usr/include/c++/12/bits/ranges_algobase.h \
- /usr/include/c++/12/bits/ranges_util.h \
- /usr/include/c++/12/pstl/glue_algorithm_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h \
- /home/vinicius/Documents/projects/tp-ia-1/src/utils.h \
- /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
- /home/vinicius/Documents/projects/tp-ia-1/src/dfs.cpp \
  /home/vinicius/Documents/projects/tp-ia-1/src/astar.cpp \
  /usr/include/c++/12/climits \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
@@ -193,7 +180,16 @@ CMakeFiles/tp-ia-1.dir/src/main.cpp.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/12/cmath \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algo.h \
+ /usr/include/c++/12/bits/algorithmfwd.h \
+ /usr/include/c++/12/bits/stl_tempbuf.h \
+ /usr/include/c++/12/bits/uniform_int_dist.h \
+ /usr/include/c++/12/bits/ranges_algo.h \
+ /usr/include/c++/12/bits/ranges_algobase.h \
+ /usr/include/c++/12/bits/ranges_util.h \
+ /usr/include/c++/12/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -215,6 +211,8 @@ CMakeFiles/tp-ia-1.dir/src/main.cpp.o: \
  /usr/include/c++/12/tr1/poly_hermite.tcc \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
  /usr/include/c++/12/tr1/riemann_zeta.tcc \
+ /home/vinicius/Documents/projects/tp-ia-1/src/utils.h \
+ /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
  /home/vinicius/Documents/projects/tp-ia-1/src/greedy.cpp \
  /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
