@@ -101,6 +101,7 @@ ser que ele encontre uma solução que não é a ótima.
 Abaixo seguem os caminhos encontrados por cada algoritmo.
 
 A*: U V Q L M N I H C D E
+
 Guloso: U V Q L M N I H C D E
 
 Análise Comparativa dos Algoritmos
