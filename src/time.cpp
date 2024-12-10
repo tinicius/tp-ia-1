@@ -7,7 +7,6 @@
 
 #include "bfs.cpp"
 #include "dfs.cpp"
-#include "astar.cpp"
 
 #define dbg(x) std::cerr << #x << " = " << x << std::endl
 
@@ -17,7 +16,6 @@ using namespace std::chrono;
 int main() {
   int bfs_sum = 0;
   int dfs_sum = 0;
-  int astar_sum = 0;
 
   for (int i = 0; i < 100; i++) {
     auto start_time = high_resolution_clock::now();
@@ -42,20 +40,10 @@ int main() {
     duration = duration_cast<microseconds>(end_time - start_time);
 
     dfs_sum += duration.count();
-
-    AStar astar(5, adj);
-    astar.run(start, end);
-
-    end_time = high_resolution_clock::now();
-    duration = duration_cast<microseconds>(end_time - start_time);
-
-    astar_sum += duration.count();
   }
 
   cout << "BFS: " << bfs_sum / 100 << " microseconds" << endl;
   cout << "DFS: " << dfs_sum / 100 << " microseconds" << endl;
-  cout << "Astar: " << astar_sum / 100 << " microseconds" << endl;
-
 
   return 0;
 }

@@ -1,15 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o.d"
-  "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o.d"
-  "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o.d"
-  "CMakeFiles/tp-ia-1.dir/src/main.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/main.cpp.o.d"
-  "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o"
-  "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o.d"
-  "tp-ia-1"
+  "CMakeFiles/tp-ia-1.dir/src/main.cpp.obj"
+  "CMakeFiles/tp-ia-1.dir/src/main.cpp.obj.d"
+  "libtp-ia-1.dll.a"
+  "tp-ia-1.exe"
+  "tp-ia-1.exe.manifest"
   "tp-ia-1.pdb"
 )
 
