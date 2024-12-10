@@ -7,6 +7,8 @@
 
 #include "bfs.cpp"
 #include "dfs.cpp"
+#include "astar.cpp"
+#include "greedy.cpp"
 
 #define dbg(x) std::cerr << #x << " = " << x << std::endl
 
@@ -31,6 +33,18 @@ int main() {
   path = dfs.run_and_get_path(start, end);
 
   cout << "DFS: ";
+
+  for (auto c : path) cout << c << " ";
+  cout << endl;
+
+  AStar astar(5, adj);
+  path = astar.run(start, end);
+
+  for (auto c : path) cout << c << " ";
+  cout << endl;
+
+  Greedy greedy(5, adj);
+  path = greedy.run_and_get_path(start, end);
 
   for (auto c : path) cout << c << " ";
   cout << endl;
