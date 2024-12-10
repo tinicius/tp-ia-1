@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/tp-ia-1.dir/src/main.cpp.o" "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o" "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o" "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o" "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o" -o tp-ia-1

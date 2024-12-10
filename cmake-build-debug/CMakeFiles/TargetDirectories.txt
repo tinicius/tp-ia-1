@@ -1,0 +1,3 @@
+/home/czarhrs/CLionProjects/tp-ia-2/cmake-build-debug/CMakeFiles/tp-ia-1.dir
+/home/czarhrs/CLionProjects/tp-ia-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/czarhrs/CLionProjects/tp-ia-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
