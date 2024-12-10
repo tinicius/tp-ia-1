@@ -21,30 +21,18 @@ int main() {
 
   auto adj = get_adj_matrix();
 
-  BFS bfs(5, adj);
-  auto path = bfs.run_and_get_path(start, end);
-
-  cout << "BFS: ";
-
-  for (auto c : path) cout << c << " ";
-  cout << endl;
-
-  DFS dfs(5, adj);
-  path = dfs.run_and_get_path(start, end);
-
-  cout << "DFS: ";
-
-  for (auto c : path) cout << c << " ";
-  cout << endl;
-
   AStar astar(5, adj);
-  path = astar.run(start, end);
+  auto path = astar.run(start, end);
+
+  cout << "AStar: ";
 
   for (auto c : path) cout << c << " ";
   cout << endl;
 
   Greedy greedy(5, adj);
   path = greedy.run_and_get_path(start, end);
+
+  cout << "Greedy: ";
 
   for (auto c : path) cout << c << " ";
   cout << endl;
