@@ -1,1 +1,3 @@
-/usr/bin/c++ -g "CMakeFiles/tp-ia-1.dir/src/main.cpp.o" "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o" "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o" "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o" "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o" -o tp-ia-1
+C:\Users\czarhrs\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\tp-ia-1.dir/objects.a
+C:\Users\czarhrs\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\tp-ia-1.dir/objects.a @CMakeFiles\tp-ia-1.dir\objects1.rsp
+C:\Users\czarhrs\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\tp-ia-1.dir/objects.a -Wl,--no-whole-archive -o tp-ia-1.exe -Wl,--out-implib,libtp-ia-1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tp-ia-1.dir\linkLibs.rsp

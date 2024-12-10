@@ -7,7 +7,6 @@
 
 #include "bfs.cpp"
 #include "dfs.cpp"
-#include "astar.cpp"
 
 #define dbg(x) std::cerr << #x << " = " << x << std::endl
 
@@ -33,11 +32,6 @@ int main() {
 
   cout << "DFS: ";
 
-  for (auto c : path) cout << c << " ";
-  cout << endl;
-
-  AStar astar(5, adj);
-  cout << "AStar: ";
   for (auto c : path) cout << c << " ";
   cout << endl;
 
