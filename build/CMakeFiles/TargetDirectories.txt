@@ -1,0 +1,3 @@
+/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles/tp-ia-1.dir
+/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles/edit_cache.dir
+/home/vinicius/Documents/projects/tp-ia-1/build/CMakeFiles/rebuild_cache.dir
