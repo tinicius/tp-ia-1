@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/tp-ia-1/src/main.cpp" "CMakeFiles/tp-ia-1.dir/src/main.cpp.obj" "gcc" "CMakeFiles/tp-ia-1.dir/src/main.cpp.obj.d"
+  "/home/czarhrs/CLionProjects/tp-ia-2/src/astar.cpp" "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o" "gcc" "CMakeFiles/tp-ia-1.dir/src/astar.cpp.o.d"
+  "/home/czarhrs/CLionProjects/tp-ia-2/src/bfs.cpp" "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o" "gcc" "CMakeFiles/tp-ia-1.dir/src/bfs.cpp.o.d"
+  "/home/czarhrs/CLionProjects/tp-ia-2/src/dfs.cpp" "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o" "gcc" "CMakeFiles/tp-ia-1.dir/src/dfs.cpp.o.d"
+  "/home/czarhrs/CLionProjects/tp-ia-2/src/main.cpp" "CMakeFiles/tp-ia-1.dir/src/main.cpp.o" "gcc" "CMakeFiles/tp-ia-1.dir/src/main.cpp.o.d"
+  "/home/czarhrs/CLionProjects/tp-ia-2/src/utils.cpp" "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o" "gcc" "CMakeFiles/tp-ia-1.dir/src/utils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
