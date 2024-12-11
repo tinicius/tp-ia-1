@@ -77,7 +77,7 @@ Abaixo seguem os caminhos encontrados por cada algoritmo.
 
 ```
 A*:     U V Q L M N I H C D E 
-Greedy: U V Q L M N I H C D 
+Greedy: U V Q L M N I H C D E
 ```
 
 # Optimalidade
